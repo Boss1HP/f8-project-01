@@ -31,16 +31,18 @@ a {
     background: #0f1b4c;
 }
 
-/* ============== Header ============== */
-.Header {
-    position: relative;
+/* ============== Fix-header =============*/
+.fix-header {
     background: #e6f0ff;
-    padding-top: 35px;
-    height: 736px;
+    position: sticky;
+    padding-top: 26px;
+    top: -26px;
+    z-index: 1;
 }
 
 .navbar {
     display: flex;
+    padding: 12px 0;
     align-items: center;
 }
 
@@ -79,8 +81,15 @@ ul a:hover {
     font-weight: 500;
 }
 
+/* ============== Header ============== */
+.Header {
+    position: relative;
+    background: #e6f0ff;
+    height: 736px;
+}
+
 .hero .info {
-    margin-top: 130px;
+    padding-top: 130px;
     width: 51%;
 }
 
